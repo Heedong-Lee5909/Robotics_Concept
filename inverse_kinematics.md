@@ -4,14 +4,27 @@
 
 ## 📌 목차 / Table of Contents
 
-1. [순운동학 vs 역운동학 / Forward vs Inverse Kinematics](#1-순운동학-vs-역운동학--forward-vs-inverse-kinematics)
-2. [역운동학이 필요한 이유 / Why Inverse Kinematics](#2-역운동학이-필요한-이유--why-inverse-kinematics)
-3. [역운동학의 어려움 / Challenges](#3-역운동학의-어려움--challenges)
-4. [해결책 MoveIt2 / Solution MoveIt2](#4-해결책-moveit2--solution-moveit2)
+1. [역운동학 / Inverse Kinematics](#1-역운동학--inverse-kinematics)
+2. [순운동학 vs 역운동학 / Forward vs Inverse Kinematics](#2-순운동학-vs-역운동학--forward-vs-inverse-kinematics)
+3. [역운동학이 필요한 이유 / Why Inverse Kinematics](#3-역운동학이-필요한-이유--why-inverse-kinematics)
+4. [역운동학의 어려움 / Challenges](#4-역운동학의-어려움--challenges)
+5. [해결책 MoveIt2 / Solution MoveIt2](#5-해결책-moveit2--solution-moveit2)
 
 ---
 
-## 1. 순운동학 vs 역운동학 / Forward vs Inverse Kinematics
+## 1. 역운동학 / Inverse Kinematics
+
+> **한국어**
+> 운동학은 힘과 토크와 같은 운동이 일어나는 원인은 고려하지 않고 운동을 연구하는 학문.
+> Inverse Kinematics는 운동학 방정식을 사용하여 원하는 위치에 도달하기 위한 로봇의 움직임을 파악하는 방법.
+
+> **English**
+> Kinematics is the study of motion itself, without considering the causes of motion, such as force or torque.
+> Inverse kinematics is a method that uses kinematics equations to determine the motion required for a robot to reach a desired position.
+
+---
+
+## 2. 순운동학 vs 역운동학 / Forward vs Inverse Kinematics
 
 > **한국어**
 > 순운동학은 각 관절의 각도를 알 때 그리퍼의 위치와 방향을 구하는 문제입니다.
@@ -32,7 +45,7 @@
 
 ---
 
-## 2. 역운동학이 필요한 이유 / Why Inverse Kinematics
+## 3. 역운동학이 필요한 이유 / Why Inverse Kinematics
 
 > **한국어**
 > 슬라이더로 관절을 하나씩 조작해 그리퍼를 원하는 위치로 이동시키는 것은 매우 불편합니다.
@@ -72,7 +85,7 @@
 
 ---
 
-## 3. 역운동학의 어려움 / Challenges
+## 4. 역운동학의 어려움 / Challenges
 
 > **한국어**
 > 순운동학은 항상 유일한 해를 가지지만, 역운동학은 경우에 따라 해가 여러 개이거나, 없거나, 무한히 많을 수 있습니다.
@@ -108,7 +121,7 @@
 
 ---
 
-## 4. 해결책 MoveIt2 / Solution MoveIt2
+## 5. 해결책 MoveIt2 / Solution MoveIt2
 
 > **한국어**
 > ROS2 오픈소스 커뮤니티가 제공하는 **MoveIt2** 라이브러리는
